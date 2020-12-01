@@ -1,0 +1,36 @@
+.sidebar-menu-area::-webkit-scrollbar {
+    width: 5px;
+    display: none;
+}
+
+.sidebar-menu-area:hover::-webkit-scrollbar {
+    display: none;
+}
+ 
+.sidebar-menu-area::-webkit-scrollbar-track {    
+    width: 100%;
+    background: #353535;
+}
+ 
+.sidebar-menu-area::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: #858585;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+}
+
+:hover::-webkit-scrollbar {
+    display: block;
+}
+ 
+::-webkit-scrollbar-track {    
+    width: 100%;
+    background: #1a1a1a;
+}
+ 
+::-webkit-scrollbar-thumb {
+    width: 100%;
+    background: #111111;
+}
