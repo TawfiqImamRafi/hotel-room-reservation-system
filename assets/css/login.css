@@ -107,3 +107,6 @@ body {
     background: #1184cc;
     transition: 0.25s;
 }
+.admin-area {
+    margin-top: 85px;
+  }

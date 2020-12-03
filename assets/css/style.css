@@ -478,4 +478,7 @@ h6 {
 .form-group .form-control::placeholder {
   font-weight: 300;
 }
+.admin-area {
+  margin-top: 85px;
+}
 /*# sourceMappingURL=style.css.map */

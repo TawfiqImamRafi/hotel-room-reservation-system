@@ -1,3 +1,10 @@
+<?php 
+session_start();
+include 'conn.php';
+if(!isset($_SESSION["login"])){
+	header('location:login.php');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

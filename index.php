@@ -112,5 +112,9 @@ include 'sidebar.php' ?>
 						</div>
 					</div>
 				</div>
+				<div class="logout-btn">
+				<a href="logout.php" class="btn btn-primary">Logout</a>
 			</div>
+			</div>
+			
 <?php include 'footer.php'?>
