@@ -60,17 +60,11 @@ include 'sidebar.php' ?>
                                                                 name="dpaid">
                                                         </div>
                                                     </div>
-                                                    <div class="form-group row">
-                                                        <label for="" class="col-lg-4 col-form-label">Payment
-                                                            Method</label>
-                                                        <div class="col-lg-8">
-                                                            <select name="payment_medhod" id="" class="form-group form-control">
-                                                                <option value="">Select Payment Option</option>
-                                                                <option value="Cash">Cash</option>
-                                                                <option value="Bkash">Bkash</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                                  
+                                                    <div class="form-submit">
+												<button type="submit" name="uppayment" class="btn-submit btn btn-primary">Submit</button>
+												
+											</div>
                                                     </form>
                                                     <?php  
                                 

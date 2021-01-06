@@ -124,10 +124,13 @@
             var dpaid = parseFloat($('#dpaid').val());
             var due = parseFloat($('#due').val());
             paid=paid + dpaid;
-            due=grand_total - paid ;
-            $('#due').val(due);
+            due=due-dpaid ;
+            $('#grand_total').val(grand_total);
             $('#paid').val(paid);
+            $('#due').val(due);
+            $('#dpaid').val(dpaid);
         });    
+        
         
 
     });

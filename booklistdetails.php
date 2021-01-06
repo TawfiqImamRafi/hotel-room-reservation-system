@@ -13,7 +13,8 @@ include 'sidebar.php' ?>
 									<div class="box-body">
 									
 											<?php
-                    $sql="SELECT * FROM tb_guests  ORDER BY `guest_id` DESC LIMIT 1";
+                    $id=$_GET['guest_id'];
+                    $sql="SELECT * FROM tb_guests WHERE $id=`guest_id`";
                     $run=$conn->query($sql);
                     if($run->num_rows > 0){
                         while ($result=$run->fetch_assoc()) {?>
@@ -125,6 +126,8 @@ include 'sidebar.php' ?>
 													<th>Paid</th>
 													<th>Due</th>
 													<th>Method</th>
+													<th>Collect payment</th>
+													
 												</tr>
 											</thead>
 
@@ -154,6 +157,8 @@ include 'sidebar.php' ?>
                             <td><?php echo $result['paid']?></td>
                             <td><?php echo $result['due']?></td>
                             <td><?php echo $result['method']?></td>
+                            <td><a href="updatepayment.php?payment_id=<?php echo $result['payment_id']?>" class="btn btn-primary">Update</a>
+                            </td>
                             <?php
                            
                         }

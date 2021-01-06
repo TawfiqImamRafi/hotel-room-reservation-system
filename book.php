@@ -72,12 +72,12 @@ try {
                  $sql="INSERT INTO payment(book_id,paid,due,method) VALUES ('$booking_id','$paid','$due','$payment_medhod')";
                  $run= $conn->query($sql);
      
+                 header('location:bookdetails.php');
          } else {
              throw new Exception($conn->error);
          }
 	
         }
-        header('location:bookdetails.php');
         
         }
         else{
@@ -86,6 +86,19 @@ try {
 
 
     // Update payment
+        if(isset($_POST['uppayment'])){
+            $id= $_GET['payment_id'];
+												$paid=$_POST['paid'];
+												$due=$_POST['due'];
+												$sql="UPDATE payment set paid='$paid',due='$due' WHERE payment_id='$id'";
+												$run= $conn->query($sql);
+												if($run){
+													header('location:booklist.php');
+	
+												}else{
+													echo 'error'.$conn->error;
+												}
+        }
     
     
 

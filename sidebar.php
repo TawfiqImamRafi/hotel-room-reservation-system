@@ -57,7 +57,8 @@
 							</a>
 							<ul class="treeview-menu">
 								<li><a href="bookroom.php">Book Room</a></li>
-								<li><a href="payment.php">Payment</a></li>
+								<li><a href="booklist.php">Booking List</a></li>
+								
 							</ul>
 						</li>
 					</ul>
