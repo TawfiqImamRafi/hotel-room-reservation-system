@@ -13,14 +13,12 @@
 								<i class="fa fa-angle-right"></i>
 							</a>
 							<ul class="treeview-menu">
-								<li><a href="index.php">Dashboard 1</a></li>
-								<li><a href="index-2.html">Dashboard 2</a></li>
-								<li><a href="index-3.html">Dashboard 3</a></li>
+								<li><a href="index.php">Dashboard</a></li>
 							</ul>
 						</li>
 						<li class="treeview">
-							<a href="javascript:void(0)"><i class="fas fa-cog"></i>  <span>Manage Rooms</span><i class="fa fa-angle-right"></i></a>
-							<ul class="treeview-menu">
+							<a href="javascript:void(0)"><i class="fas fa-cog"></i> <span>Manage Rooms</span></a>
+							<ul >
 								<li class="treeview">
                                     <a href="javascript:void(0)"><span>Manage Categories</span> <i class="fa fa-angle-right"></i></a>
                                     <ul class="treeview-menu">
@@ -49,6 +47,17 @@
                                         <li><a href="roomlist.php">Room List</a></li>			
                                     </ul>
                                 </li>
+							</ul>
+						</li>
+                        <li class="treeview">
+							<a href="javascript:void(0)">
+								<i class="fas fa-book"></i> 
+								<span>Booking Management</span> 
+								<i class="fa fa-angle-right"></i>
+							</a>
+							<ul class="treeview-menu">
+								<li><a href="bookroom.php">Book Room</a></li>
+								<li><a href="payment.php">Payment</a></li>
 							</ul>
 						</li>
 					</ul>

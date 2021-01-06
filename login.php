@@ -33,8 +33,8 @@ if(isset($_POST['login'])){
     $run=$conn->query($sql);
     if($run->num_rows > 0){
         $result=$run->fetch_assoc();
-        $_SESSION["admin_id"]=["$id"];
-        $_SESSION["admin_name"]=["$name"];
+        $_SESSION["admin_id"]=$result['admin_id'];
+        $_SESSION["admin_name"]=$result['admin_name'];
         $_SESSION["login"]=["login"];
 
         header("location:index.php");

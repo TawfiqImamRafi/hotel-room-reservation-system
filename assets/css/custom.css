@@ -38,3 +38,29 @@
 .admin-area {
     margin-top: 85px;
   }
+.chk-btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.border-right{
+    border-right: 2px solid blue;
+}
+.border-top{
+    border-top: 4px solid blue;
+}
+
+/* datepicker style */
+.datepicker {
+    padding: 5px;
+}
+
+.datepicker table tr th {
+    padding: 5px 5px;
+}
+
+.datepicker .day {
+    padding: 5px;
+}
+.book-fot{
+    padding: 5px 5px;
+}

@@ -1,5 +1,9 @@
 <?php include 'header.php';
-include 'sidebar.php' ?>
+include 'sidebar.php';
+if (isset($_SESSION['errors'])) {
+	$errors = $_SESSION['errors'];
+	unset($_SESSION['errors']);
+} ?>
 <!-- main-content -->
 <div class="main-content-area">
 				<div class="content">
@@ -13,6 +17,7 @@ include 'sidebar.php' ?>
 										
 									</div>
                                     <?php
+									if(isset($_GET['room_type_id'])){
                                     $id= $_GET['room_type_id'];
                                     $sql="SELECT*FROM tb_room_types WHERE room_type_id='$id'";
                                     $run=$conn->query($sql);
@@ -23,8 +28,23 @@ include 'sidebar.php' ?>
 									<div class="box-body">
 										<form action="types.php?room_type_id=<?php echo $result['room_type_id']?>" method="post">
 											<div class="form-group">
-												<label for="room_type_name">Category Name</label>
+												<label for="room_type_name">Type Name</label>
+												<?php 
+												if(!isset($_SESSION['olddata'])){?>
 												<input type="text" name="room_type_name" value="<?php echo $result['room_type_name']?>" id="room_type_name" class="form-control">
+												<?php
+												
+											}else{?>
+												<input type="text" name="room_type_name" value="<?php echo $_SESSION['olddata']?>" id="room_type_name" class="form-control">
+
+												<?php
+												unset($_SESSION['olddata']);
+												}
+												?>
+												<?php
+													if (isset($errors['room_type_name'])) {
+														echo '<span class="text-danger">'.$errors['room_type_name'].'</span>';
+													}?>
 											</div>
 											<div class="form-submit">
 												<button type="submit" name="up_type" class="btn-submit btn btn-primary">Update</button>
@@ -32,9 +52,11 @@ include 'sidebar.php' ?>
                                         </form>
                                   <?php  
                                 }
+								}
+							
                                     
                                     ?>
-										
+								
 									</div>
 								</div>
 							</div>

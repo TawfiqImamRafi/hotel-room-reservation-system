@@ -16,6 +16,7 @@ if(!isset($_SESSION["login"])){
     <title>Admin Panel</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/images/favicon.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
     <!-- css files from plugins -->
     <link rel="stylesheet" href="assets/plugins/bootstrap-4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/all.min.css">
